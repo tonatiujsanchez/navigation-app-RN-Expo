@@ -1,14 +1,14 @@
 import { View, Text, SafeAreaView } from 'react-native'
 import React from 'react'
 import { Link } from 'expo-router'
-import CustomButton from '../../components/ui/CustomButton';
+import CustomButton from '../../../components/ui/CustomButton';
 
 const HomeScreen = () => {
   return (
     <SafeAreaView>
       <View className="mt-7 mx-2.5">
         <Text className="text-center ml-5 text-4xl font-work-black my-2">
-          HOME SCREEN
+          HOME VIEW
         </Text>
 
         <Link href={'/products'} asChild>
