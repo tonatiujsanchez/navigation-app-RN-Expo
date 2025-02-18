@@ -1,9 +1,7 @@
-import { SafeAreaView } from 'react-native'
+import { useEffect } from 'react'
 import { Slot, SplashScreen } from 'expo-router'
 import { useFonts } from 'expo-font'
-import { StatusBar } from 'expo-status-bar'
 import "./global.css"
-import { useEffect } from 'react'
 
 SplashScreen.preventAutoHideAsync()
 
@@ -34,10 +32,7 @@ const RootLayout = () => {
   }
 
   return (
-    <SafeAreaView>
       <Slot />
-      <StatusBar style="dark" />
-    </SafeAreaView>
   )
 }
 
