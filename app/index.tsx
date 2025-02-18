@@ -1,9 +1,18 @@
 import { View, Text } from 'react-native'
-import "./global.css"
+
+
 const App = () => {
   return (
-    <View className="mt-3">
-      <Text className="text-red-700 ml-5 text-xl font-bold">¡Hola mundo desde RN!</Text>
+    <View className="mt-7 mx-2.5">
+      <Text className="text-slate-800 ml-5 text-4xl font-work-black">
+        ¡Hola mundo - RN!
+      </Text>
+      <Text className="text-slate-800 ml-5 text-3xl font-work-medium">
+        ¡Hola mundo - RN!
+      </Text>
+      <Text className="text-slate-800 ml-5 text-2xl font-work-light">
+        ¡Hola mundo - RN!
+      </Text>
     </View>
   )
 }
