@@ -16,7 +16,7 @@ const HomeScreen = () => {
             color='primary'
             className='mb-1'
           >
-            Productos -
+            👕 Productos
           </CustomButton>
         </Link>
 
