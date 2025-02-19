@@ -1,12 +1,22 @@
-import { View, Text } from 'react-native'
 import React from 'react'
-import { Stack } from 'expo-router'
 import { Ionicons } from '@expo/vector-icons';
 import { Tabs } from 'expo-router';
 
 const TabsLayout = () => {
   return (
-    <Tabs screenOptions={{ tabBarActiveTintColor: '#49129C' }}>
+    <Tabs 
+      screenOptions={{ 
+        tabBarActiveTintColor: '#49129C',
+        headerShown: false,
+      }}
+    >
+      <Tabs.Screen
+        name="(stack)"
+        options={{
+          title: 'Stack',
+          tabBarIcon: ({ color }) => <Ionicons size={28} name="analytics-outline" color={color} />,
+        }}
+      />
       <Tabs.Screen
         name="home/index"
         options={{

@@ -17,7 +17,7 @@ const ProductsScreen = () => {
             <Text className="text-gray-700 leading-6 font-work-medium">{ item.description }</Text>
             <View className="flex flex-row justify-end">
               <Link 
-                href={`/(stack)/products/${ item.id }`}
+                href={`/tabs/(stack)/products/${ item.id }`}
                 className="text-primary"
               >
                 Ver detalles
