@@ -7,7 +7,6 @@ const TabsLayout = () => {
     <Tabs 
       screenOptions={{ 
         tabBarActiveTintColor: '#49129C',
-        headerShown: false,
       }}
     >
       <Tabs.Screen
@@ -15,6 +14,7 @@ const TabsLayout = () => {
         options={{
           title: 'Stack',
           tabBarIcon: ({ color }) => <Ionicons size={28} name="analytics-outline" color={color} />,
+          headerShown: false,
         }}
       />
       <Tabs.Screen

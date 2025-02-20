@@ -1,8 +1,17 @@
 import { View, Text, SafeAreaView } from 'react-native'
-import { Link } from 'expo-router'
+import { Link, useNavigation } from 'expo-router'
 import CustomButton from '@/components/ui/CustomButton';
+import { Ionicons } from '@expo/vector-icons';
+import { DrawerActions } from '@react-navigation/native';
 
 const HomeScreen = () => {
+
+  const navigation = useNavigation()
+
+  const onToggleMenuDrawer = () => {
+    navigation.dispatch( DrawerActions.toggleDrawer )
+  }
+
   return (
     <SafeAreaView>
       <View className="mt-7 mx-2.5">
@@ -18,7 +27,6 @@ const HomeScreen = () => {
             👕 Productos
           </CustomButton>
         </Link>
-
         <CustomButton
           onPress={ ()=>console.log('OnPress... Text Only') }
           color='primary'
@@ -64,6 +72,13 @@ const HomeScreen = () => {
             Ajustes
           </CustomButton>
         </Link>
+        <CustomButton
+          onPress={ onToggleMenuDrawer }
+          color='tertiary'
+          className='mb-1'
+        >
+          <Ionicons name="menu-outline" size={20} /> Menú
+        </CustomButton>
       </View>
   </SafeAreaView>
   )

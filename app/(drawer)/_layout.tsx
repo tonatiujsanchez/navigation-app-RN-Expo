@@ -10,7 +10,6 @@ const DrawerLayout = () => {
         overlayColor: 'rgba(0,0,0,0.4)',
         drawerActiveTintColor:'#49129C',
         headerShadowVisible: false,
-        headerShown: false,
         sceneStyle: {
           backgroundColor: '#FFF'
         },
@@ -44,6 +43,7 @@ const DrawerLayout = () => {
         options={{
           drawerLabel: 'Tabs',
           title: 'Tabs + Stack',
+          headerShown: false,
           drawerIcon: ({ color, size })=> ( 
             <Ionicons name="analytics-outline" size={size} color={color} /> 
           ),
