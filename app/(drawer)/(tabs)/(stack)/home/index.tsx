@@ -1,7 +1,6 @@
 import { View, Text, SafeAreaView } from 'react-native'
-import React from 'react'
 import { Link } from 'expo-router'
-import CustomButton from '../../../../components/ui/CustomButton';
+import CustomButton from '@/components/ui/CustomButton';
 
 const HomeScreen = () => {
   return (
@@ -11,7 +10,7 @@ const HomeScreen = () => {
           HOME VIEW
         </Text>
 
-        <Link href={'/tabs/products'} asChild>
+        <Link href={'/products'} asChild>
           <CustomButton
             color='primary'
             className='mb-1'
@@ -45,22 +44,22 @@ const HomeScreen = () => {
         </CustomButton>
         
         {/*=== === Link === ===*/}
-        <Link href="/tabs/(stack)/home" className="mt-3" asChild>
+        <Link href="/home" className="mt-3" asChild>
           <CustomButton variant="text-only">
             Home
           </CustomButton>
         </Link>
-        <Link href="/tabs/(stack)/products" className="mt-3" asChild>
+        <Link href="/products" className="mt-3" asChild>
           <CustomButton variant='text-only'>
             Productos
           </CustomButton>
         </Link>
-        <Link href="/tabs/(stack)/profile" className="mt-3" asChild>
+        <Link href="/profile" className="mt-3" asChild>
           <CustomButton variant="text-only">
             Perfil
           </CustomButton>
         </Link>
-        <Link href="/tabs/(stack)/settings" className="mt-3" asChild>
+        <Link href="/settings" className="mt-3" asChild>
           <CustomButton variant='text-only'>
             Ajustes
           </CustomButton>
